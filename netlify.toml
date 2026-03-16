@@ -4,3 +4,4 @@
   to = "/index.html"
   status = 200
   force = true
+  conditions = { Not = ["/assets/*", "/favicon.png"] }
