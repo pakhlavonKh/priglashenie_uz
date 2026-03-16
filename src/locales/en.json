@@ -1,0 +1,73 @@
+{
+  "navbar": {
+    "home": "Home",
+    "templates": "Templates",
+    "pricing": "Pricing",
+    "about": "About"
+  },
+  "hero": {
+    "title": "Elegant Digital Invitation Templates",
+    "subtitle": "Beautiful, ready-to-use invitation websites for weddings, birthdays, baby showers, and every celebration worth remembering.",
+    "cta": "Browse Templates"
+  },
+  "categories": {
+    "title": "Choose Your Event Type",
+    "wedding": "Wedding",
+    "birthday": "Birthday",
+    "babyshower": "Baby Shower",
+    "graduation": "Graduation",
+    "engagement": "Engagement"
+  },
+  "featured": {
+    "title": "Featured Templates",
+    "viewAll": "View All"
+  },
+  "benefits": {
+    "title": "Why Nikaah Studio?",
+    "easy": {
+      "title": "Easy to Use",
+      "description": "No technical skills required. Just select, customize, and share."
+    },
+    "customizable": {
+      "title": "Fully Customizable",
+      "description": "Set your own colors, fonts, and design."
+    },
+    "responsive": {
+      "title": "Works on All Devices",
+      "description": "Looks perfect on every device—from smartphones to computers."
+    },
+    "instant": {
+      "title": "Instant Sharing",
+      "description": "Get a URL to instantly share your invitations online."
+    }
+  },
+  "howitworks": {
+    "title": "How It Works",
+    "step1": "Select a Template",
+    "step1desc": "Find the perfect template for your event",
+    "step2": "Customize",
+    "step2desc": "Edit with your details",
+    "step3": "Share",
+    "step3desc": "Share with your guests"
+  },
+  "testimonials": {
+    "title": "What Our Users Say"
+  },
+  "footer": {
+    "company": "Company",
+    "product": "Product",
+    "legal": "Legal",
+    "about": "About",
+    "blog": "Blog",
+    "pricing": "Pricing",
+    "contact": "Contact",
+    "terms": "Terms",
+    "privacy": "Privacy",
+    "copyright": "© 2024 Nikaah Studio. All rights reserved."
+  },
+  "seo": {
+    "title": "Nikaah Studio — Digital Invitation Templates",
+    "description": "Beautiful digital invitation templates for weddings, birthdays, baby showers, and other events.",
+    "keywords": "digital invitations, wedding invitation, event templates"
+  }
+}

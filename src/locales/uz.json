@@ -1,0 +1,73 @@
+{
+  "navbar": {
+    "home": "Bosh sahifa",
+    "templates": "Shablonlar",
+    "pricing": "Narxlar",
+    "about": "Biz haqida"
+  },
+  "hero": {
+    "title": "Sizning Maxsus Tadbirlaringiz uchun Raqamli Taklifnomalar",
+    "subtitle": "Nikaah Studio — elegantlik va soddalikni birlashtirgan raqamli taklifnomalar",
+    "cta": "Shablonlarini Ko'ring"
+  },
+  "categories": {
+    "title": "Tadbir Turlarini Tanlang",
+    "wedding": "Nikoh",
+    "birthday": "Tug'ilgan kuniga",
+    "babyshower": "Chaqaloq Dushasi",
+    "graduation": "Bitiruvchilik",
+    "engagement": "Oldindan Muhabbat"
+  },
+  "featured": {
+    "title": "Tafsiyalangan Shablonlar",
+    "viewAll": "Barchasini Ko'ring"
+  },
+  "benefits": {
+    "title": "Nima uchun Nikaah Studiosi?",
+    "easy": {
+      "title": "Oson Foydalanish",
+      "description": "Hech qanday texnik bilim siz kerak emas. Shunchaki tanlang, tahrirlang va ulashing."
+    },
+    "customizable": {
+      "title": "To'lasicha Sozlanuvchi",
+      "description": "O'z ranglarini, shriftlarini va dizayninni belgilang."
+    },
+    "responsive": {
+      "title": "Barcha Qurilmalarda",
+      "description": "Smartfondan kompyuterga hamma qurilmalarda mukammal ko'rinadi."
+    },
+    "instant": {
+      "title": "Darhol Ulashish",
+      "description": "Sizning taklifnomalaringizni onlamda ulashish uchun URL oling."
+    }
+  },
+  "howitworks": {
+    "title": "Ishlashi Tartibi",
+    "step1": "Shablonni Tanlang",
+    "step1desc": "Sizga yoqqan shablonni toping",
+    "step2": "Tahrirla",
+    "step2desc": "Tafsiltalaringiz bilan tahrir qiling",
+    "step3": "Ulashish",
+    "step3desc": "Mehmonlaringizga ulashing"
+  },
+  "testimonials": {
+    "title": "Foydalanuvchilar Nima Deyishadi"
+  },
+  "footer": {
+    "company": "Kompaniya",
+    "product": "Mahsulot",
+    "legal": "Huquqiy",
+    "about": "Biz haqida",
+    "blog": "Blog",
+    "pricing": "Narxlar",
+    "contact": "Aloqa",
+    "terms": "Shartlar",
+    "privacy": "Maxfiylik",
+    "copyright": "© 2024 Nikaah Studio. Barcha huquqlar himoyalangan."
+  },
+  "seo": {
+    "title": "Nikaah Studio — Raqamli Taklifnomalar Shablonlari",
+    "description": "Elegant raqamli taklifnomalar shablonlari nikohlar, tug'ilgan kunlar, chaqaloq dashasi va boshqa tadbirlar uchun.",
+    "keywords": "raqamli taklifnomalar, nikoh taklifnomasi, tadbir shablonlari"
+  }
+}
