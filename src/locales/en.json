@@ -6,11 +6,18 @@
     "about": "About"
   },
   "hero": {
+    "label": "Digital Invitation Templates",
     "title": "Elegant Digital Invitation Templates",
     "subtitle": "Beautiful, ready-to-use invitation websites for weddings, birthdays, baby showers, and every celebration worth remembering.",
     "cta": "Browse Templates"
   },
+  "featured": {
+    "label": "Curated Collection",
+    "title": "Featured Templates",
+    "viewAll": "View All"
+  },
   "categories": {
+    "label": "Browse by Occasion",
     "title": "Choose Your Event Type",
     "wedding": "Wedding",
     "birthday": "Birthday",
@@ -18,11 +25,9 @@
     "graduation": "Graduation",
     "engagement": "Engagement"
   },
-  "featured": {
-    "title": "Featured Templates",
-    "viewAll": "View All"
-  },
+
   "benefits": {
+    "label": "Why Choose Digital",
     "title": "Why Nikaah Studio?",
     "easy": {
       "title": "Easy to Use",
@@ -42,6 +47,7 @@
     }
   },
   "howitworks": {
+    "label": "Simple Process",
     "title": "How It Works",
     "step1": "Select a Template",
     "step1desc": "Find the perfect template for your event",
@@ -51,9 +57,30 @@
     "step3desc": "Share with your guests"
   },
   "testimonials": {
-    "title": "What Our Users Say"
+    "label": "Love Stories",
+    "title": "What Our Users Say",
+    "items": [
+      {
+        "quote": "Our guests were amazed by how beautiful and easy-to-use our digital invitation was. It felt so personal and elegant.",
+        "couple": "Sarah & James",
+        "location": "London, UK"
+      },
+      {
+        "quote": "We saved so much time and created something truly unique. The template was stunning and our guests loved the RSVP feature.",
+        "couple": "Priya & Rahul",
+        "location": "Mumbai, India"
+      },
+      {
+        "quote": "The quality of the design exceeded our expectations. It perfectly captured the romantic feel we wanted for our wedding.",
+        "couple": "Maria & Carlos",
+        "location": "Barcelona, Spain"
+      }
+    ]
   },
   "footer": {
+    "branding": "Beautifully crafted digital wedding invitation templates. Share your love story with elegance.",
+    "madeWith": "Made with",
+    "forBeautifulBeginnings": "for beautiful beginnings",
     "company": "Company",
     "product": "Product",
     "legal": "Legal",
@@ -69,5 +96,45 @@
     "title": "Nikaah Studio — Digital Invitation Templates",
     "description": "Beautiful digital invitation templates for weddings, birthdays, baby showers, and other events.",
     "keywords": "digital invitations, wedding invitation, event templates"
+  },
+  "templates": {
+    "label": "Our Collection",
+    "title": "All Templates",
+    "filterCategory": "Category",
+    "filterStyle": "Style",
+    "filterCulture": "Culture",
+    "filterLanguage": "Language",
+    "clearAll": "Clear All"
+  },
+  "template": {
+    "preview": "Preview Live",
+    "notFound": "Template not found",
+    "backToTemplates": "Back to Templates",
+    "buy": "Buy Template",
+    "demo": "Live Demo",
+    "featuresIncluded": "Features Included",
+    "youMayAlsoLike": "You May Also Like",
+    "relatedTemplates": "Related Templates",
+    "style": "Style",
+    "culture": "Culture",
+    "language": "Language"
+  },
+  "notfound": {
+    "message": "Oops! Page not found",
+    "returnHome": "Return to Home"
+  },
+  "pages": {
+    "home": {
+      "title": "Nikaah Studio — Digital Invitation Templates",
+      "description": "Beautiful digital invitation templates for weddings, birthdays, baby showers, and other events."
+    },
+    "templates": {
+      "title": "All Templates - Nikaah Studio",
+      "description": "Browse our collection of elegant digital invitation templates"
+    },
+    "notfound": {
+      "title": "Page Not Found - Nikaah Studio",
+      "description": "The page you are looking for could not be found."
+    }
   }
 }

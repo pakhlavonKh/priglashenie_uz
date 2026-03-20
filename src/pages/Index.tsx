@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import FeaturedTemplates from "@/components/FeaturedTemplates";
@@ -9,7 +10,12 @@ import Footer from "@/components/Footer";
 import { usePageTitle } from "@/hooks/use-page-title";
 
 const Index = () => {
-  usePageTitle();
+  const { t } = useTranslation();
+
+  usePageTitle({
+    title: t("pages.home.title"),
+    description: t("pages.home.description"),
+  });
 
   return (
     <div className="min-h-screen">

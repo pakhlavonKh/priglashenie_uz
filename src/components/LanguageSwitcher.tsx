@@ -25,8 +25,8 @@ export const LanguageSwitcher = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="icon" className="w-10 h-10">
-          <Globe className="h-5 w-5" />
+        <Button variant="ghost" size="sm" className="h-8 w-8 px-1">
+          <Globe className="h-4 w-4" />
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">

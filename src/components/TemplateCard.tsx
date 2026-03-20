@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import type { Template } from "@/data/templates";
 
 interface TemplateCardProps {
@@ -6,6 +7,7 @@ interface TemplateCardProps {
 }
 
 const TemplateCard = ({ template }: TemplateCardProps) => {
+  const { t } = useTranslation();
   return (
     <Link to={`/templates/${template.id}`} className="group block">
       <div className="relative overflow-hidden rounded-lg border border-border bg-card transition-all duration-500 group-hover:shadow-hover group-hover:-translate-y-1">
@@ -20,7 +22,7 @@ const TemplateCard = ({ template }: TemplateCardProps) => {
           {/* Hover overlay */}
           <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/10 transition-all duration-500 flex items-center justify-center">
             <span className="opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0 bg-primary text-primary-foreground px-6 py-2.5 text-xs font-body font-medium tracking-widest uppercase rounded-sm">
-              Preview Live
+              {t("template.preview")}
             </span>
           </div>
         </div>

@@ -8,7 +8,7 @@ interface PageMetadata {
 }
 
 export const usePageTitle = (metadata?: PageMetadata) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   useEffect(() => {
     const title = metadata?.title || t('seo.title');
@@ -52,5 +52,5 @@ export const usePageTitle = (metadata?: PageMetadata) => {
     }
     ogDescription.setAttribute('content', description);
 
-  }, [metadata, t]);
+  }, [metadata, t, i18n.language]);
 };

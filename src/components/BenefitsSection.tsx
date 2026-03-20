@@ -1,8 +1,10 @@
 import { Smartphone, Link2, UserCheck, Sparkles } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { useInView } from "@/hooks/use-in-view";
 
 const BenefitsSection = () => {
   const { t } = useTranslation();
+  const { ref, isInView } = useInView({ once: true, threshold: 0.2 });
 
   const benefits = [
     {
@@ -28,11 +30,11 @@ const BenefitsSection = () => {
   ];
 
   return (
-    <section className="py-20 lg:py-28 bg-secondary/30">
+    <section className="py-20 lg:py-28 bg-secondary/30" ref={ref}>
       <div className="container mx-auto px-6 lg:px-12">
-        <div className="text-center space-y-4 mb-14">
+        <div className={`text-center space-y-4 mb-14 ${isInView ? 'animate-slide-in-left' : 'opacity-0'}`}>
           <p className="text-xs font-body font-medium tracking-[0.3em] uppercase text-muted-foreground">
-            Why Choose Digital
+            {t("benefits.label")}
           </p>
           <h2 className="text-3xl md:text-4xl font-display font-medium text-foreground">
             {t("benefits.title")}
@@ -40,8 +42,8 @@ const BenefitsSection = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
-          {benefits.map((benefit) => (
-            <div key={benefit.title} className="text-center space-y-4 group">
+          {benefits.map((benefit, i) => (
+            <div key={benefit.title} className={`text-center space-y-4 group ${isInView ? 'animate-slide-in-right' : 'opacity-0'}`} style={{ animationDelay: `${i * 0.12}s` }}>
               <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-accent text-accent-foreground transition-shadow duration-300 group-hover:shadow-soft">
                 <benefit.icon size={22} strokeWidth={1.5} />
               </div>

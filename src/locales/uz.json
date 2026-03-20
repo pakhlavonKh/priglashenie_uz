@@ -6,11 +6,18 @@
     "about": "Biz haqida"
   },
   "hero": {
+    "label": "Raqamli Taklifnomalar Shablonlari",
     "title": "Sizning Maxsus Tadbirlaringiz uchun Raqamli Taklifnomalar",
     "subtitle": "Nikaah Studio — elegantlik va soddalikni birlashtirgan raqamli taklifnomalar",
     "cta": "Shablonlarini Ko'ring"
   },
+  "featured": {
+    "label": "Tanlangan To'plam",
+    "title": "Tafsiyalangan Shablonlar",
+    "viewAll": "Barchasini Ko'ring"
+  },
   "categories": {
+    "label": "Tadbir Bo'yicha Ko'rib Chiqing",
     "title": "Tadbir Turlarini Tanlang",
     "wedding": "Nikoh",
     "birthday": "Tug'ilgan kuniga",
@@ -18,11 +25,9 @@
     "graduation": "Bitiruvchilik",
     "engagement": "Oldindan Muhabbat"
   },
-  "featured": {
-    "title": "Tafsiyalangan Shablonlar",
-    "viewAll": "Barchasini Ko'ring"
-  },
+
   "benefits": {
+    "label": "Nima uchun Raqamli Tanlang",
     "title": "Nima uchun Nikaah Studiosi?",
     "easy": {
       "title": "Oson Foydalanish",
@@ -42,6 +47,7 @@
     }
   },
   "howitworks": {
+    "label": "Oson Jarayon",
     "title": "Ishlashi Tartibi",
     "step1": "Shablonni Tanlang",
     "step1desc": "Sizga yoqqan shablonni toping",
@@ -51,9 +57,30 @@
     "step3desc": "Mehmonlaringizga ulashing"
   },
   "testimonials": {
-    "title": "Foydalanuvchilar Nima Deyishadi"
+    "label": "Muhabbat Hikoyalari",
+    "title": "Foydalanuvchilar Nima Deyishadi",
+    "items": [
+      {
+        "quote": "Mehmonlarimiz raqamli taklif noma'lumasi qanchalik chiroyli va foydalanish uchun oson ekanligiga hayron bo'lishdi. Bu shunday shaxsiy va elegantlik edi.",
+        "couple": "Sara & Jeymz",
+        "location": "London, Birlashgan Qirollik"
+      },
+      {
+        "quote": "Biz vaqt tejay va haqiqatan noyob narsa yarattik. Shablon ajoyib edi va bizning mehmonlarimiz RSVP xususiyatini yoqtirdi.",
+        "couple": "Priya & Rahul",
+        "location": "Mumbai, Hindiston"
+      },
+      {
+        "quote": "Dizayning sifati bizning kutilishimizdan ortdi. U bizning nikohimiz uchun xohlagan romantik hissiyotni mukammal o'rttirib berdi.",
+        "couple": "Maria & Karlos",
+        "location": "Barselona, Ispaniya"
+      }
+    ]
   },
   "footer": {
+    "branding": "Elegantly oformlangan raqamli turmush qur'ani taklif shablonlari. O'zingizning muhabbat hikoyasini ehtiromi bilan ulashing.",
+    "madeWith": "Bilan yaratilgan",
+    "forBeautifulBeginnings": "chiroyli boshlanishlar uchun",
     "company": "Kompaniya",
     "product": "Mahsulot",
     "legal": "Huquqiy",
@@ -69,5 +96,45 @@
     "title": "Nikaah Studio — Raqamli Taklifnomalar Shablonlari",
     "description": "Elegant raqamli taklifnomalar shablonlari nikohlar, tug'ilgan kunlar, chaqaloq dashasi va boshqa tadbirlar uchun.",
     "keywords": "raqamli taklifnomalar, nikoh taklifnomasi, tadbir shablonlari"
+  },
+  "templates": {
+    "label": "Bizning To'plam",
+    "title": "Barcha Shablonlar",
+    "filterCategory": "Kategoriya",
+    "filterStyle": "Uslub",
+    "filterCulture": "Madaniyat",
+    "filterLanguage": "Til",
+    "clearAll": "Barchasini Tozalaydigan"
+  },
+  "template": {
+    "preview": "Live Ko'rish",
+    "notFound": "Shablon topilmadi",
+    "backToTemplates": "Shablonlarga Qaytish",
+    "buy": "Shablonni Sotib Olish",
+    "demo": "Live Demo",
+    "featuresIncluded": "Kiritilgan Xususiyatlar",
+    "youMayAlsoLike": "Sizga Yoqqan bo'lishi Mumkin",
+    "relatedTemplates": "Tegishli Shablonlar",
+    "style": "Uslub",
+    "culture": "Madaniyat",
+    "language": "Til"
+  },
+  "notfound": {
+    "message": "Oops! Sahifa topilmadi",
+    "returnHome": "Bosh Sahifaga Qaytish"
+  },
+  "pages": {
+    "home": {
+      "title": "Nikaah Studio — Raqamli Taklifnomalar",
+      "description": "Nikohlar, tug'ilgan kunlar, chaqaloq dashasi va boshqa tadbirlar uchun elegant raqamli taklifnomalar."
+    },
+    "templates": {
+      "title": "Barcha Shablonlar - Nikaah Studio",
+      "description": "Bizning elegant raqamli taklifnomalar to'plamini ko'rib chiqing"
+    },
+    "notfound": {
+      "title": "Sahifa Topilmadi - Nikaah Studio",
+      "description": "Afsuski, siz qidirgan sahifa topilmadi."
+    }
   }
 }

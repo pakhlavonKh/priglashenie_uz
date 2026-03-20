@@ -14,7 +14,7 @@ const Footer = () => {
               Nikaah<span className="font-light text-muted-foreground">.studio</span>
             </h3>
             <p className="text-muted-foreground font-light text-sm leading-relaxed max-w-sm">
-              Beautifully crafted digital wedding invitation templates. Share your love story with elegance.
+              {t("footer.branding")}
             </p>
           </div>
 
@@ -48,7 +48,7 @@ const Footer = () => {
             {t("footer.copyright")}
           </p>
           <p className="text-xs text-muted-foreground font-light tracking-wide flex items-center gap-1">
-            Made with <Heart size={10} className="text-accent-foreground" /> for beautiful beginnings
+            {t("footer.madeWith")} <Heart size={10} className="text-accent-foreground" /> {t("footer.forBeautifulBeginnings")}
           </p>
         </div>
       </div>

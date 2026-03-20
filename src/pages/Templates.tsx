@@ -1,5 +1,6 @@
 import { useState, useMemo } from "react";
 import { useSearchParams } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { categories as allCategories } from "@/data/templates";
@@ -8,9 +9,11 @@ import { templates, styles, cultures, languages } from "@/data/templates";
 import { usePageTitle } from "@/hooks/use-page-title";
 
 const Templates = () => {
+  const { t } = useTranslation();
+
   usePageTitle({
-    title: "All Templates - Nikaah Studio",
-    description: "Browse our collection of elegant digital invitation templates",
+    title: t("pages.templates.title"),
+    description: t("pages.templates.description"),
   });
 
   const [searchParams] = useSearchParams();
@@ -46,15 +49,15 @@ const Templates = () => {
       <select
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className="appearance-none bg-card border border-border rounded-sm px-4 py-2 pr-8 text-xs font-body font-light tracking-widest uppercase text-foreground cursor-pointer hover:border-foreground transition-colors focus:outline-none focus:border-foreground"
+        className="appearance-none bg-card border border-border rounded-md px-3 py-1.5 pr-7 text-xs font-body font-light tracking-widest uppercase text-foreground cursor-pointer hover:border-foreground/70 hover:shadow-sm transition-all focus:outline-none focus:ring-1 focus:ring-foreground/30 focus:border-foreground"
       >
         <option value="">{label}</option>
         {options.map((o) => (
           <option key={o} value={o}>{o}</option>
         ))}
       </select>
-      <div className="absolute right-2.5 top-1/2 -translate-y-1/2 pointer-events-none">
-        <svg className="w-3 h-3 text-muted-foreground" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+      <div className="absolute right-2 top-1/2 -translate-y-1/2 pointer-events-none opacity-60">
+        <svg className="w-3 h-3 text-foreground" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
       </div>
     </div>
   );
@@ -67,19 +70,19 @@ const Templates = () => {
           {/* Header */}
           <div className="space-y-4 mb-12 animate-fade-up">
             <p className="text-xs font-body font-medium tracking-[0.3em] uppercase text-muted-foreground">
-              Our Collection
+              {t("templates.label")}
             </p>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-display font-medium text-foreground">
-              All Templates
+              {t("templates.title")}
             </h1>
           </div>
 
           {/* Filters */}
           <div className="flex flex-wrap gap-3 mb-12">
-            <FilterPill label="Category" options={allCategories} value={selectedCategory} onChange={setSelectedCategory} />
-            <FilterPill label="Style" options={styles} value={selectedStyle} onChange={setSelectedStyle} />
-            <FilterPill label="Culture" options={cultures} value={selectedCulture} onChange={setSelectedCulture} />
-            <FilterPill label="Language" options={languages} value={selectedLanguage} onChange={setSelectedLanguage} />
+            <FilterPill label={t("templates.filterCategory")} options={allCategories} value={selectedCategory} onChange={setSelectedCategory} />
+            <FilterPill label={t("templates.filterStyle")} options={styles} value={selectedStyle} onChange={setSelectedStyle} />
+            <FilterPill label={t("templates.filterCulture")} options={cultures} value={selectedCulture} onChange={setSelectedCulture} />
+            <FilterPill label={t("templates.filterLanguage")} options={languages} value={selectedLanguage} onChange={setSelectedLanguage} />
             {(selectedStyle || selectedCulture || selectedLanguage || selectedCategory) && (
               <button
                 onClick={() => {
@@ -90,7 +93,7 @@ const Templates = () => {
                 }}
                 className="text-xs font-body font-light tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors underline underline-offset-4"
               >
-                Clear All
+                {t("templates.clearAll")}
               </button>
             )}
           </div>
