@@ -17,4 +17,20 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    target: "ES2020",
+    minify: "esbuild",
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ["react", "react-dom", "react-router-dom", "react-i18next"],
+          ui: ["sonner", "lucide-react"],
+        },
+      },
+    },
+    sourcemap: false,
+    cssCodeSplit: true,
+    reportCompressedSize: false,
+    chunkSizeWarningLimit: 500,
+  },
 });

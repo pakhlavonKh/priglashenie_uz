@@ -28,7 +28,7 @@
 
   "benefits": {
     "label": "Why Choose Digital",
-    "title": "Why Nikaah Studio?",
+    "title": "Why Invito?",
     "easy": {
       "title": "Easy to Use",
       "description": "No technical skills required. Just select, customize, and share."
@@ -90,10 +90,10 @@
     "contact": "Contact",
     "terms": "Terms",
     "privacy": "Privacy",
-    "copyright": "© 2024 Nikaah Studio. All rights reserved."
+    "copyright": "© 2024 Invito. All rights reserved."
   },
   "seo": {
-    "title": "Nikaah Studio — Digital Invitation Templates",
+    "title": "Invito — Digital Invitation Templates",
     "description": "Beautiful digital invitation templates for weddings, birthdays, baby showers, and other events.",
     "keywords": "digital invitations, wedding invitation, event templates"
   },
@@ -125,15 +125,15 @@
   },
   "pages": {
     "home": {
-      "title": "Nikaah Studio — Digital Invitation Templates",
+      "title": "Invito — Digital Invitation Templates",
       "description": "Beautiful digital invitation templates for weddings, birthdays, baby showers, and other events."
     },
     "templates": {
-      "title": "All Templates - Nikaah Studio",
+      "title": "All Templates - Invito",
       "description": "Browse our collection of elegant digital invitation templates"
     },
     "notfound": {
-      "title": "Page Not Found - Nikaah Studio",
+      "title": "Page Not Found - Invito",
       "description": "The page you are looking for could not be found."
     }
   }

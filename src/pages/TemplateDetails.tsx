@@ -14,7 +14,7 @@ const TemplateDetails = () => {
 
   usePageTitle(
     template ? {
-      title: `${template.name} - Digital Invitation Template | Nikaah Studio`,
+      title: `${template.name} - Digital Invitation Template | Invito`,
       description: template.description,
     } : undefined
   );

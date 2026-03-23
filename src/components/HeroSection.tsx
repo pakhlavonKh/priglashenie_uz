@@ -7,7 +7,7 @@ const HeroSection = () => {
 
   return (
     <section className="w-full">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-12 py-8 sm:py-12 lg:py-20 h-screen lg:min-h-screen flex items-center">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-12 py-8 sm:py-12 lg:pt-24 h-screen lg:min-h-screen flex items-center">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-8 lg:gap-20 items-center w-full h-full lg:h-auto">
           {/* Text */}
           <div className="space-y-4 sm:space-y-6 lg:space-y-8 animate-fade-up flex flex-col justify-center">

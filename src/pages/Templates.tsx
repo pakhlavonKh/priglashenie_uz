@@ -1,12 +1,13 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useRef, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { categories as allCategories } from "@/data/templates";
 import TemplateCard from "@/components/TemplateCard";
-import { templates, styles, cultures, languages } from "@/data/templates";
+import { templates, styles } from "@/data/templates";
 import { usePageTitle } from "@/hooks/use-page-title";
+import { ChevronDown } from "lucide-react";
 
 const Templates = () => {
   const { t } = useTranslation();
@@ -20,19 +21,15 @@ const Templates = () => {
   const initialCategory = searchParams.get("category") || "";
 
   const [selectedStyle, setSelectedStyle] = useState("");
-  const [selectedCulture, setSelectedCulture] = useState("");
-  const [selectedLanguage, setSelectedLanguage] = useState("");
   const [selectedCategory, setSelectedCategory] = useState(initialCategory);
 
   const filtered = useMemo(() => {
     return templates.filter((t) => {
       if (selectedStyle && t.style !== selectedStyle) return false;
-      if (selectedCulture && t.culture !== selectedCulture) return false;
-      if (selectedLanguage && t.language !== selectedLanguage) return false;
       if (selectedCategory && t.category !== selectedCategory) return false;
       return true;
     });
-  }, [selectedStyle, selectedCulture, selectedLanguage, selectedCategory]);
+  }, [selectedStyle, selectedCategory]);
 
   const FilterPill = ({
     label,
@@ -44,23 +41,67 @@ const Templates = () => {
     options: string[];
     value: string;
     onChange: (v: string) => void;
-  }) => (
-    <div className="relative">
-      <select
-        value={value}
-        onChange={(e) => onChange(e.target.value)}
-        className="appearance-none bg-card border border-border rounded-md px-3 py-1.5 pr-7 text-xs font-body font-light tracking-widest uppercase text-foreground cursor-pointer hover:border-foreground/70 hover:shadow-sm transition-all focus:outline-none focus:ring-1 focus:ring-foreground/30 focus:border-foreground"
-      >
-        <option value="">{label}</option>
-        {options.map((o) => (
-          <option key={o} value={o}>{o}</option>
-        ))}
-      </select>
-      <div className="absolute right-2 top-1/2 -translate-y-1/2 pointer-events-none opacity-60">
-        <svg className="w-3 h-3 text-foreground" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+  }) => {
+    const [isOpen, setIsOpen] = useState(false);
+    const dropdownRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+      const handleClickOutside = (event: MouseEvent) => {
+        if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+          setIsOpen(false);
+        }
+      };
+
+      document.addEventListener("mousedown", handleClickOutside);
+      return () => document.removeEventListener("mousedown", handleClickOutside);
+    }, []);
+
+    return (
+      <div className="relative" ref={dropdownRef}>
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="flex items-center gap-2 bg-card border border-border rounded-md px-3 py-1.5 text-xs font-body font-light tracking-widest uppercase text-foreground hover:border-foreground/70 hover:shadow-sm transition-all"
+        >
+          {value || label}
+          <ChevronDown size={14} className={`transition-transform ${isOpen ? "rotate-180" : ""}`} />
+        </button>
+
+        {isOpen && (
+          <div className="absolute top-full left-0 mt-1 bg-card border border-border rounded-md shadow-md z-50 min-w-max">
+            <button
+              onClick={() => {
+                onChange("");
+                setIsOpen(false);
+              }}
+              className={`block w-full text-left px-3 py-2 text-xs font-body font-light tracking-widest uppercase transition-all ${
+                value === ""
+                  ? "bg-foreground text-background"
+                  : "text-foreground hover:bg-secondary"
+              }`}
+            >
+              {label}
+            </button>
+            {options.map((option) => (
+              <button
+                key={option}
+                onClick={() => {
+                  onChange(option);
+                  setIsOpen(false);
+                }}
+                className={`block w-full text-left px-3 py-2 text-xs font-body font-light tracking-widest uppercase transition-all border-t border-border ${
+                  value === option
+                    ? "bg-foreground text-background"
+                    : "text-foreground hover:bg-secondary"
+                }`}
+              >
+                {option}
+              </button>
+            ))}
+          </div>
+        )}
       </div>
-    </div>
-  );
+    );
+  };
 
   return (
     <div className="min-h-screen">
@@ -78,17 +119,15 @@ const Templates = () => {
           </div>
 
           {/* Filters */}
-          <div className="flex flex-wrap gap-3 mb-12">
-            <FilterPill label={t("templates.filterCategory")} options={allCategories} value={selectedCategory} onChange={setSelectedCategory} />
-            <FilterPill label={t("templates.filterStyle")} options={styles} value={selectedStyle} onChange={setSelectedStyle} />
-            <FilterPill label={t("templates.filterCulture")} options={cultures} value={selectedCulture} onChange={setSelectedCulture} />
-            <FilterPill label={t("templates.filterLanguage")} options={languages} value={selectedLanguage} onChange={setSelectedLanguage} />
-            {(selectedStyle || selectedCulture || selectedLanguage || selectedCategory) && (
+          <div className="space-y-6 mb-12">
+            <div className="flex flex-wrap gap-3">
+              <FilterPill label={t("templates.filterCategory")} options={allCategories} value={selectedCategory} onChange={setSelectedCategory} />
+              <FilterPill label={t("templates.filterStyle")} options={styles} value={selectedStyle} onChange={setSelectedStyle} />
+            </div>
+            {(selectedStyle || selectedCategory) && (
               <button
                 onClick={() => {
                   setSelectedStyle("");
-                  setSelectedCulture("");
-                  setSelectedLanguage("");
                   setSelectedCategory("");
                 }}
                 className="text-xs font-body font-light tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors underline underline-offset-4"
@@ -115,8 +154,6 @@ const Templates = () => {
               <button
                 onClick={() => {
                   setSelectedStyle("");
-                  setSelectedCulture("");
-                  setSelectedLanguage("");
                   setSelectedCategory("");
                 }}
                 className="mt-4 text-sm font-body font-light tracking-widest uppercase text-foreground underline underline-offset-4"

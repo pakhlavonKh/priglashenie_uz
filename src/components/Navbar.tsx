@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { LanguageSwitcher } from "./LanguageSwitcher";
+import logo from "@/assets/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +20,7 @@ const Navbar = () => {
       <div className="container mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-16 lg:h-20">
           <Link to="/" className="font-display text-xl lg:text-2xl font-semibold tracking-tight text-foreground">
-            Nikaah<span className="text-muted-foreground font-light">.studio</span>
+            <img src={logo} alt="Invito Logo" className="h-8 lg:h-10" />
           </Link>
 
           {/* Desktop */}

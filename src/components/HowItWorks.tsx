@@ -23,7 +23,7 @@ const HowItWorks = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 lg:gap-6">
           {steps.map((step, i) => (
             <div key={step.number} className={`relative text-center space-y-4 ${isInView ? 'animate-slide-in-up' : 'opacity-0'}`} style={{ animationDelay: `${i * 0.15}s`, animation: isInView ? `slideInUp 0.7s ease-out forwards ${i * 0.15}s` : 'none' }}>
               <span className="block font-display text-5xl font-light text-border">{step.number}</span>

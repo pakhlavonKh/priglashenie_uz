@@ -1,4 +1,4 @@
-# Nikaah Studio — Digital Invitation Platform
+# Invito — Digital Invitation Platform
 
 Beautiful, ready-to-use digital invitation website templates for your special occasions.
 
