@@ -14,8 +14,8 @@ const TemplateDetails = () => {
 
   usePageTitle(
     template ? {
-      title: `${template.name} - Digital Invitation Template | Invito`,
-      description: template.description,
+      title: `${t(template.nameKey)} - Digital Invitation Template | Invito`,
+      description: t(template.descriptionKey),
     } : undefined
   );
 
@@ -54,11 +54,11 @@ const TemplateDetails = () => {
           {/* Split layout */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
             {/* Left - Image */}
-            <div className="space-y-4">
-              <div className="rounded-lg overflow-hidden border border-border shadow-card">
+            <div className="space-y-4 flex justify-center">
+              <div className="rounded-lg overflow-hidden border border-border shadow-card max-w-xs w-full mx-auto">
                 <img
-                  src={template.image}
-                  alt={template.name}
+                  src={template.imageDesktop || template.image}
+                  alt={t(template.nameKey)}
                   className="w-full object-cover"
                 />
               </div>
@@ -67,14 +67,12 @@ const TemplateDetails = () => {
             {/* Right - Info (sticky) */}
             <div className="lg:sticky lg:top-28 lg:self-start space-y-8">
               <div className="space-y-3">
-                <p className="text-xs font-body font-medium tracking-[0.3em] uppercase text-muted-foreground">
-                  {template.category}
-                </p>
+                {/* You can add a category if you add it to the template data */}
                 <h1 className="text-3xl md:text-4xl font-display font-medium text-foreground">
-                  {template.name}
+                  {t(template.nameKey)}
                 </h1>
                 <p className="text-base text-muted-foreground font-light leading-relaxed">
-                  {template.description}
+                  {t(template.descriptionKey)}
                 </p>
               </div>
 
@@ -86,9 +84,14 @@ const TemplateDetails = () => {
                 <button className="flex-1 inline-flex items-center justify-center px-8 py-3.5 bg-primary text-primary-foreground text-xs font-body font-medium tracking-widest uppercase rounded-sm hover:opacity-90 transition-opacity duration-300">
                   {t("template.buy")}
                 </button>
-                <button className="flex-1 inline-flex items-center justify-center gap-2 px-8 py-3.5 border border-border text-foreground text-xs font-body font-medium tracking-widest uppercase rounded-sm hover:bg-secondary transition-colors duration-300">
+                <a
+                  href={template.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 inline-flex items-center justify-center gap-2 px-8 py-3.5 border border-border text-foreground text-xs font-body font-medium tracking-widest uppercase rounded-sm hover:bg-secondary transition-colors duration-300"
+                >
                   <ExternalLink size={14} /> {t("template.demo")}
-                </button>
+                </a>
               </div>
 
               {/* Features */}
@@ -97,18 +100,19 @@ const TemplateDetails = () => {
                   {t("template.featuresIncluded")}
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  {template.features.map((feature) => (
-                    <div key={feature} className="flex items-center gap-2.5">
+                  {template.featuresKeys.map((featureKey) => (
+                    <div key={featureKey} className="flex items-center gap-2.5">
                       <div className="flex-shrink-0 w-5 h-5 rounded-full bg-accent flex items-center justify-center">
                         <Check size={12} className="text-accent-foreground" />
                       </div>
-                      <span className="text-sm text-muted-foreground font-light">{feature}</span>
+                      <span className="text-sm text-muted-foreground font-light">{t(featureKey)}</span>
                     </div>
                   ))}
                 </div>
               </div>
 
-              {/* Details */}
+              {/* Details (optional, only if you add these fields to your template data) */}
+              {/*
               <div className="space-y-3 pt-2 border-t border-border">
                 <div className="flex justify-between py-2">
                   <span className="text-xs text-muted-foreground font-light tracking-wide uppercase">{t("template.style")}</span>
@@ -123,6 +127,7 @@ const TemplateDetails = () => {
                   <span className="text-sm text-foreground font-light">{template.language}</span>
                 </div>
               </div>
+              */}
             </div>
           </div>
 

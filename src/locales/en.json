@@ -97,15 +97,6 @@
     "description": "Beautiful digital invitation templates for weddings, birthdays, baby showers, and other events.",
     "keywords": "digital invitations, wedding invitation, event templates"
   },
-  "templates": {
-    "label": "Our Collection",
-    "title": "All Templates",
-    "filterCategory": "Category",
-    "filterStyle": "Style",
-    "filterCulture": "Culture",
-    "filterLanguage": "Language",
-    "clearAll": "Clear All"
-  },
   "template": {
     "preview": "Preview Live",
     "notFound": "Template not found",
@@ -135,6 +126,39 @@
     "notfound": {
       "title": "Page Not Found - Invito",
       "description": "The page you are looking for could not be found."
+    }
+  },
+  "templates": {
+    "label": "Our Collection",
+    "title": "All Templates",
+    "filterCategory": "Category",
+    "filterStyle": "Style",
+    "filterCulture": "Culture",
+    "filterLanguage": "Language",
+    "clearAll": "Clear All",
+    "1": {
+      "name": "Autumn Vows",
+      "description": "A romantic autumn-themed wedding invitation template with warm colors and elegant design."
+    },
+    "2": {
+      "name": "Velvet Promise",
+      "description": "A romantic, minimal template focused on pure connection and timeless love."
+    },
+    "3": {
+      "name": "Green Harmony",
+      "description": "A fresh, nature-inspired wedding invitation with clean elegance and botanical tones."
+    }, 
+    "4": {
+      "name": "Little Secret",
+      "description": "A playful and modern invitation designed to build excitement for your special surprise."
+    }, 
+    "5": {
+      "name": "Blue Serenity",
+      "description": "A calming and elegant wedding invitation template with soft blue tones and minimalist design."
+    }, 
+    "6": {
+      "name": "Pink Celebration",
+      "description": "A vibrant and joyful birthday invitation template with playful pink hues and festive design."
     }
   }
 }

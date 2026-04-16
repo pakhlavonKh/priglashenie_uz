@@ -15,7 +15,7 @@ const TemplateCard = ({ template }: TemplateCardProps) => {
         <div className="aspect-[4/5] overflow-hidden">
           <img
             src={template.image}
-            alt={template.name}
+            alt={t(template.nameKey)}
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
             loading="lazy"
           />
@@ -29,15 +29,12 @@ const TemplateCard = ({ template }: TemplateCardProps) => {
 
         {/* Info */}
         <div className="p-5 space-y-2">
-          <h3 className="font-display text-lg font-medium text-foreground">{template.name}</h3>
+          <h3 className="font-display text-lg font-medium text-foreground">{t(template.nameKey)}</h3>
           <p className="text-xs text-muted-foreground font-light leading-relaxed line-clamp-2">
-            {template.description}
+            {t(template.descriptionKey)}
           </p>
           <div className="flex items-center justify-between pt-2">
             <span className="text-sm font-body font-medium text-foreground">${template.price}</span>
-            <span className="text-xs text-muted-foreground font-light tracking-wide uppercase">
-              {template.style}
-            </span>
           </div>
         </div>
       </div>
