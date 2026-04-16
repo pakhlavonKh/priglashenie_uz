@@ -108,7 +108,19 @@
     "relatedTemplates": "Related Templates",
     "style": "Style",
     "culture": "Culture",
-    "language": "Language"
+    "language": "Language",
+    "feature.rsvp": "RSVP form",
+    "feature.mobile": "Mobile-friendly design",
+    "feature.instantShare": "Instant sharing link",
+    "feature.gallery": "Photo gallery",
+    "feature.multilanguage": "Multi-language support",
+    "feature.privacy": "Privacy controls",
+    "optionalFeatures": "Optional Features",
+    "feature.telegramBot": "Telegram RSVP Bot (optional, +$10)",
+    "feature.telegramBotDescription": "Get RSVP notifications directly in your Telegram via a custom bot.",
+    "feature.customDomain": "Custom Domain (from $10)",
+    "feature.customDomainDescription": "Use your own domain name for your invitation website.",
+    "feature.optionalNote": "You can add these options for an additional fee."
   },
   "notfound": {
     "message": "Oops! Page not found",
@@ -147,18 +159,46 @@
     "3": {
       "name": "Green Harmony",
       "description": "A fresh, nature-inspired wedding invitation with clean elegance and botanical tones."
-    }, 
+    },
     "4": {
       "name": "Little Secret",
       "description": "A playful and modern invitation designed to build excitement for your special surprise."
-    }, 
+    },
     "5": {
       "name": "Blue Serenity",
       "description": "A calming and elegant wedding invitation template with soft blue tones and minimalist design."
-    }, 
+    },
     "6": {
       "name": "Pink Celebration",
       "description": "A vibrant and joyful birthday invitation template with playful pink hues and festive design."
+    },
+    "7": {
+      "name": "Uzatu Night",
+      "description": "A heartfelt invitation capturing the beauty and emotion of a traditional send-off ceremony."
+    },
+    "8": {
+      "name": "Celebrate Today",
+      "description": "A clean and modern invitation designed for fun, energy, and unforgettable celebrations."
+    },
+    "9": {
+      "name": "Forever Starts Here",
+      "description": "A minimal and romantic template marking the start of a lifelong journey."
+    },
+    "10": {
+      "name": "Golden Send-Off",
+      "description": "A refined uzatu invitation blending cultural heritage with modern style."
+    },
+    "11": {
+      "name": "Golden Birthday",
+      "description": "A luxurious and elegant birthday invitation template with rich gold tones and sophisticated design."
+    },
+    "12": {
+      "name": "Evergreen Vows",
+      "description": "A timeless and elegant invitation template with lush green tones and classic design."
+    },
+    "13": {
+      "name": "Dark Red Romance",
+      "description": "A bold and passionate wedding invitation template with deep red hues and dramatic design."
     }
   }
 }

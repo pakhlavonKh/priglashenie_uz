@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { templates } from "@/data/templates";
+import { templates, OPTIONAL_FEATURES } from "@/data/templates";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import TemplateCard from "@/components/TemplateCard";
@@ -55,11 +55,11 @@ const TemplateDetails = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
             {/* Left - Image */}
             <div className="space-y-4 flex justify-center">
-              <div className="rounded-lg overflow-hidden border border-border shadow-card max-w-xs w-full mx-auto">
+              <div className="rounded-lg overflow-hidden border border-border shadow-card max-w-2xl w-full aspect-[4/3] mx-auto bg-background flex items-center justify-center">
                 <img
                   src={template.imageDesktop || template.image}
                   alt={t(template.nameKey)}
-                  className="w-full object-cover"
+                  className="w-full h-full object-cover"
                 />
               </div>
             </div>
@@ -81,9 +81,14 @@ const TemplateDetails = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-3">
-                <button className="flex-1 inline-flex items-center justify-center px-8 py-3.5 bg-primary text-primary-foreground text-xs font-body font-medium tracking-widest uppercase rounded-sm hover:opacity-90 transition-opacity duration-300">
+                <a
+                  href="https://t.me/pahlavon_kh"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 inline-flex items-center justify-center px-8 py-3.5 bg-primary text-primary-foreground text-xs font-body font-medium tracking-widest uppercase rounded-sm hover:opacity-90 transition-opacity duration-300"
+                >
                   {t("template.buy")}
-                </button>
+                </a>
                 <a
                   href={template.link}
                   target="_blank"
@@ -109,6 +114,21 @@ const TemplateDetails = () => {
                     </div>
                   ))}
                 </div>
+              </div>
+
+              {/* Optional Features */}
+              <div className="space-y-2 pt-4">
+                <h3 className="text-xs font-body font-medium tracking-[0.3em] uppercase text-muted-foreground">
+                  {t("template.optionalFeatures")}
+                </h3>
+                <p className="text-xs text-muted-foreground font-light mb-2">{t("template.feature.optionalNote")}</p>
+                <ul className="list-disc pl-5 space-y-1">
+                  {OPTIONAL_FEATURES.map((opt) => (
+                    <li key={opt.key} className="text-sm text-muted-foreground font-light">
+                      {t(opt.key)}
+                    </li>
+                  ))}
+                </ul>
               </div>
 
               {/* Details (optional, only if you add these fields to your template data) */}

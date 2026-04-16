@@ -97,16 +97,76 @@
     "description": "Elegant raqamli taklifnomalar shablonlari nikohlar, tug'ilgan kunlar, chaqaloq dashasi va boshqa tadbirlar uchun.",
     "keywords": "raqamli taklifnomalar, nikoh taklifnomasi, tadbir shablonlari"
   },
+
   "templates": {
-    "label": "Bizning To'plam",
-    "title": "Barcha Shablonlar",
+    "label": "Bizning to‘plam",
+    "title": "Barcha shablonlar",
     "filterCategory": "Kategoriya",
     "filterStyle": "Uslub",
     "filterCulture": "Madaniyat",
     "filterLanguage": "Til",
-    "clearAll": "Barchasini Tozalaydigan"
+    "clearAll": "Tozalash",
+    "1": {
+      "name": "Kuzgi Qasamyodlar",
+      "description": "Issiq ranglar va nafis dizaynga ega romantik kuz mavzusidagi to‘y taklifnomasi."
+    },
+    "2": {
+      "name": "Baxmal Va’da",
+      "description": "Soddalik va abadiy muhabbatni aks ettiruvchi romantik minimalistik shablon."
+    },
+    "3": {
+      "name": "Yashil Uyg‘unlik",
+      "description": "Tabiatdan ilhomlangan, toza va botanik uslubdagi nafis to‘y taklifnomasi."
+    },
+    "4": {
+      "name": "Kichik Sir",
+      "description": "Sizning maxsus tadbiringiz atrofida qiziqish uyg‘otuvchi zamonaviy va o‘ynoqi taklifnoma."
+    },
+    "5": {
+      "name": "Moviy Tinchlik",
+      "description": "Yumshoq moviy ranglar va minimal dizaynga ega sokin va nafis to‘y taklifnomasi."
+    },
+    "6": {
+      "name": "Pushti Bayram",
+      "description": "Quvnoq pushti ranglar bilan bezatilgan yorqin tug‘ilgan kun taklifnomasi."
+    },
+    "7": {
+      "name": "Uzatu Kechasi",
+      "description": "Kelin kuzatish marosimining go‘zalligi va hissiyotlarini aks ettiruvchi taklifnoma."
+    },
+    "8": {
+      "name": "Bugun Bayram",
+      "description": "Quvnoq va unutilmas tadbirlar uchun zamonaviy va toza dizayndagi taklifnoma."
+    },
+    "9": {
+      "name": "Hammasi Shu Yerdan Boshlanadi",
+      "description": "Birgalikdagi hayot boshlanishini ifodalovchi romantik va minimalistik shablon."
+    },
+    "10": {
+      "name": "Oltin Uzatu",
+      "description": "Milliy an’analar va zamonaviy uslubni uyg‘unlashtirgan nafis uzatu taklifnomasi."
+    },
+    "11": {
+      "name": "Oltin Tug‘ilgan Kun",
+      "description": "Oltin ranglar bilan boyitilgan hashamatli va nafis tug‘ilgan kun taklifnomasi."
+    },
+    "12": {
+      "name": "Doimiy Yashil Qasamyodlar",
+      "description": "Yashil ranglar va klassik uslubga ega abadiy nafis taklifnoma."
+    },
+    "13": {
+      "name": "To‘q Qizil Romantika",
+      "description": "Chuqur qizil ranglar va dramatik dizaynga ega ehtirosli to‘y taklifnomasi."
+    }
   },
+
   "template": {
+    "feature.rsvp": "RSVP formasi",
+    "feature.mobile": "Mobil qurilmalarga mos dizayn",
+    "feature.instantShare": "Tezkor ulashish havolasi",
+    "feature.gallery": "Foto galereya",
+    "feature.multilanguage": "Ko‘p tilli qo‘llab-quvvatlash",
+    "feature.privacy": "Maxfiylik sozlamalari",
     "preview": "Live Ko'rish",
     "notFound": "Shablon topilmadi",
     "backToTemplates": "Shablonlarga Qaytish",
@@ -117,7 +177,13 @@
     "relatedTemplates": "Tegishli Shablonlar",
     "style": "Uslub",
     "culture": "Madaniyat",
-    "language": "Til"
+    "language": "Til",
+    "optionalFeatures": "Qo'shimcha imkoniyatlar",
+    "feature.telegramBot": "Telegram RSVP boti (ixtiyoriy, +10$)",
+    "feature.telegramBotDescription": "RSVP xabarnomalarini Telegram orqali maxsus bot yordamida oling.",
+    "feature.customDomain": "Shaxsiy domen (10$ dan)",
+    "feature.customDomainDescription": "Taklifnoma saytingiz uchun o'z domen nomingizdan foydalaning.",
+    "feature.optionalNote": "Ushbu imkoniyatlarni qo'shimcha to'lov evaziga tanlashingiz mumkin."
   },
   "notfound": {
     "message": "Oops! Sahifa topilmadi",
