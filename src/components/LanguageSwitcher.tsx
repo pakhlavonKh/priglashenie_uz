@@ -23,19 +23,25 @@ export const LanguageSwitcher = () => {
     setActiveIndex(index);
   };
 
-  useEffect(() => {
+  // Helper to update background position
+  const updateBg = () => {
     const btn = btnRefs.current[activeIndex];
     const container = containerRef.current;
-
     if (btn && container) {
       const btnRect = btn.getBoundingClientRect();
       const containerRect = container.getBoundingClientRect();
-
       setBgStyle({
         left: btnRect.left - containerRect.left,
         width: btnRect.width,
       });
     }
+  };
+
+  useEffect(() => {
+    updateBg();
+    window.addEventListener('resize', updateBg);
+    return () => window.removeEventListener('resize', updateBg);
+    // eslint-disable-next-line
   }, [activeIndex]);
 
   return (
@@ -47,8 +53,9 @@ export const LanguageSwitcher = () => {
       <div
         className="absolute top-1 bottom-1 bg-primary rounded-full transition-all duration-300 ease-in-out"
         style={{
-          left: bgStyle.left,
+          left: bgStyle.width ? bgStyle.left : undefined,
           width: bgStyle.width,
+          opacity: bgStyle.width ? 1 : 0,
         }}
       />
 
