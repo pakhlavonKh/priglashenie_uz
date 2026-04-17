@@ -33,13 +33,6 @@ const Templates = () => {
             </h1>
           </div>
 
-
-
-          {/* Results */}
-          <p className="text-xs text-muted-foreground font-light tracking-wide mb-8">
-            {templates.length} {templates.length === 1 ? "result" : "results"}
-          </p>
-
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8">
             {templates.map((template) => (
               <TemplateCard key={template.id} template={template} />

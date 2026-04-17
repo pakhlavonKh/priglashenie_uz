@@ -1,4 +1,9 @@
-{
+
+{  "customSection": {
+    "title": "Want Something Custom?",
+    "description": "If you need a unique invitation or want a custom design, contact us and we'll create something special just for you.",
+    "cta": "Contact Us"
+  },
   "navbar": {
     "home": "Home",
     "templates": "Templates",
@@ -90,7 +95,7 @@
     "contact": "Contact",
     "terms": "Terms",
     "privacy": "Privacy",
-    "copyright": "© 2024 Invito. All rights reserved."
+    "copyright": "Invito. All rights reserved."  
   },
   "seo": {
     "title": "Invito — Digital Invitation Templates",

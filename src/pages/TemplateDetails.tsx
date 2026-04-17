@@ -41,7 +41,7 @@ const TemplateDetails = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <main className="pt-24 lg:pt-32 pb-20">
+      <main className="pt-16 lg:pt-24 pb-20">
         <div className="container mx-auto px-6 lg:px-12">
           {/* Back */}
           <Link
@@ -55,7 +55,7 @@ const TemplateDetails = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
             {/* Left - Image */}
             <div className="space-y-4 flex justify-center">
-              <div className="rounded-lg overflow-hidden border border-border shadow-card max-w-2xl w-full aspect-[4/3] mx-auto bg-background flex items-center justify-center">
+              <div className="rounded-lg overflow-hidden border border-border shadow-card max-w-2xl w-full aspect-[16/7] mx-auto bg-background flex items-center justify-center">
                 <img
                   src={template.imageDesktop || template.image}
                   alt={t(template.nameKey)}
@@ -65,7 +65,7 @@ const TemplateDetails = () => {
             </div>
 
             {/* Right - Info (sticky) */}
-            <div className="lg:sticky lg:top-28 lg:self-start space-y-8">
+            <div className="lg:sticky lg:top-28 lg:self-start space-y-8 lg:max-h-[80vh] lg:overflow-y-auto scrollbar-thin scrollbar-thumb-border scrollbar-track-transparent">
               <div className="space-y-3">
                 {/* You can add a category if you add it to the template data */}
                 <h1 className="text-3xl md:text-4xl font-display font-medium text-foreground">
@@ -130,24 +130,6 @@ const TemplateDetails = () => {
                   ))}
                 </ul>
               </div>
-
-              {/* Details (optional, only if you add these fields to your template data) */}
-              {/*
-              <div className="space-y-3 pt-2 border-t border-border">
-                <div className="flex justify-between py-2">
-                  <span className="text-xs text-muted-foreground font-light tracking-wide uppercase">{t("template.style")}</span>
-                  <span className="text-sm text-foreground font-light">{template.style}</span>
-                </div>
-                <div className="flex justify-between py-2 border-t border-border">
-                  <span className="text-xs text-muted-foreground font-light tracking-wide uppercase">{t("template.culture")}</span>
-                  <span className="text-sm text-foreground font-light">{template.culture}</span>
-                </div>
-                <div className="flex justify-between py-2 border-t border-border">
-                  <span className="text-xs text-muted-foreground font-light tracking-wide uppercase">{t("template.language")}</span>
-                  <span className="text-sm text-foreground font-light">{template.language}</span>
-                </div>
-              </div>
-              */}
             </div>
           </div>
 
@@ -157,9 +139,6 @@ const TemplateDetails = () => {
               <p className="text-xs font-body font-medium tracking-[0.3em] uppercase text-muted-foreground">
                 {t("template.youMayAlsoLike")}
               </p>
-              <h2 className="text-3xl font-display font-medium text-foreground">
-                {t("template.relatedTemplates")}
-              </h2>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
               {related.map((t) => (

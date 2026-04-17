@@ -1,4 +1,9 @@
 {
+  "customSection": {
+    "title": "Maxsus narsa xohlaysizmi?",
+    "description": "Agar sizga noyob taklifnoma yoki maxsus dizayn kerak bo'lsa, biz bilan bog'laning va biz siz uchun maxsus narsa yaratamiz.",
+    "cta": "Biz bilan bog'laning"
+  },
   "navbar": {
     "home": "Bosh sahifa",
     "templates": "Shablonlar",
@@ -90,7 +95,7 @@
     "contact": "Aloqa",
     "terms": "Shartlar",
     "privacy": "Maxfiylik",
-    "copyright": "© 2024 Invito. Barcha huquqlar himoyalangan."
+    "copyright": "Invito. Barcha huquqlar himoyalangan."
   },
   "seo": {
     "title": "Invito — Raqamli Taklifnomalar Shablonlari",

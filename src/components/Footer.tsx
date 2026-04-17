@@ -7,7 +7,7 @@ const Footer = () => {
 
   return (
     <footer className="border-t border-border bg-secondary/30">
-      <div className="container mx-auto px-6 lg:px-12 py-16 lg:py-20">
+      <div className="container mx-auto px-6 lg:px-12 py-8 lg:py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           <div className="md:col-span-2">
             <h3 className="font-display text-xl font-semibold text-foreground mb-3">
@@ -23,12 +23,11 @@ const Footer = () => {
             <div className="space-y-3">
               <Link to="/templates" className="block text-sm text-muted-foreground hover:text-foreground transition-colors font-light">{t("navbar.templates")}</Link>
               <Link to="/" className="block text-sm text-muted-foreground hover:text-foreground transition-colors font-light">{t("howitworks.title")}</Link>
-              <Link to="/" className="block text-sm text-muted-foreground hover:text-foreground transition-colors font-light">{t("navbar.pricing")}</Link>
             </div>
           </div>
 
           <div>
-            <h4 className="text-xs font-body font-medium tracking-widest uppercase text-foreground mb-4">{t("footer.legal")}</h4>
+            <h4 className="text-xs font-body font-medium tracking-widest uppercase text-foreground mb-4">{t("footer.contact")}</h4>
             <div className="space-y-3">
               <p className="text-sm text-muted-foreground font-light">hello@invito.com</p>
               <div className="flex gap-4 pt-2">
@@ -45,7 +44,7 @@ const Footer = () => {
 
         <div className="mt-16 pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-muted-foreground font-light tracking-wide">
-            {t("footer.copyright")}
+            &copy; {new Date().getFullYear()} {t("footer.copyright")}
           </p>
           <p className="text-xs text-muted-foreground font-light tracking-wide flex items-center gap-1">
             {t("footer.madeWith")} <Heart size={10} className="text-accent-foreground" /> {t("footer.forBeautifulBeginnings")}

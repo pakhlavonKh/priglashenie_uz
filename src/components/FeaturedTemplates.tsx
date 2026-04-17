@@ -10,7 +10,17 @@ const FeaturedTemplates = () => {
   const { t } = useTranslation();
   const { ref, isInView } = useInView({ once: true, threshold: 0.2 });
 
-  const featured = templates.filter((t) => t.isFeatured).slice(0, 8);
+  // Shuffle templates and pick random featured ones
+  function shuffleArray<T>(array: T[]): T[] {
+    const arr = [...array];
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }
+
+  const featured = shuffleArray(templates).slice(0, 6);
   const autoplayDelay = 5000;
 
   // 🔹 Responsive visible count
