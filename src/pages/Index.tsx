@@ -34,7 +34,9 @@ const Index = () => {
               {t("customSection.description")}
             </p>
             <a
-              href="mailto:hello@invito.com"
+              href="https://t.me/invito_live"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block px-6 py-3 rounded-md bg-primary text-white font-medium shadow hover:bg-primary/90 transition-colors"
             >
               {t("customSection.cta")}

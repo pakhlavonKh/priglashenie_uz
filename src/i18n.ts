@@ -3,6 +3,7 @@ import { initReactI18next } from 'react-i18next';
 import enTranslations from './locales/en.json';
 import uzTranslations from './locales/uz.json';
 import ruTranslations from './locales/ru.json';
+import kzTranslations from './locales/kz.json';
 
 const resources = {
   en: {
@@ -13,6 +14,9 @@ const resources = {
   },
   ru: {
     translation: ruTranslations
+  },
+  kz: {
+    translation: kzTranslations
   }
 };
 
@@ -22,10 +26,10 @@ const getInitialLanguage = () => {
   if (saved) return saved;
   
   const browserLang = navigator.language.split('-')[0];
-  if (['en', 'uz', 'ru'].includes(browserLang)) {
+  if (["en", "uz", "ru", "kz"].includes(browserLang)) {
     return browserLang;
   }
-  return 'en'; // Default to English
+  return "en"; // Default to English
 };
 
 i18n

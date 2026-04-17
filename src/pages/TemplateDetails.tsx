@@ -82,7 +82,7 @@ const TemplateDetails = () => {
 
               <div className="flex flex-col sm:flex-row gap-3">
                 <a
-                  href="https://t.me/pahlavon_kh"
+                  href="https://t.me/invito_live"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 inline-flex items-center justify-center px-8 py-3.5 bg-primary text-primary-foreground text-xs font-body font-medium tracking-widest uppercase rounded-sm hover:opacity-90 transition-opacity duration-300"

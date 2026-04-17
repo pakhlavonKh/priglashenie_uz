@@ -4,7 +4,10 @@ import { useState, useRef, useEffect } from 'react';
 export const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
   const [activeIndex, setActiveIndex] = useState(
-    i18n.language === 'uz' ? 0 : i18n.language === 'ru' ? 1 : 2
+    i18n.language === 'uz' ? 0 :
+    i18n.language === 'ru' ? 1 :
+    i18n.language === 'en' ? 2 :
+    3 // kz
   );
 
   const containerRef = useRef<HTMLDivElement>(null);
@@ -15,6 +18,7 @@ export const LanguageSwitcher = () => {
     { code: 'uz', name: 'UZ' },
     { code: 'ru', name: 'RU' },
     { code: 'en', name: 'EN' },
+    { code: 'kz', name: 'KZ' },
   ];
 
   const handleLanguageChange = (lng: string, index: number) => {
