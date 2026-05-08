@@ -24,6 +24,10 @@ import evergreen from "../assets/evergreen.webp";
 import evergreenDesktop from "../assets/evergreenDesktop.webp";
 import darkRed from "../assets/darkRed.webp";
 import darkRedDesktop from "../assets/darkRedDesktop.webp";
+import darkBlue from "../assets/darkBlue.webp";
+import darkBlueDesktop from "../assets/darkBlueDesktop.webp";
+import graduation from "../assets/graduation.webp";
+import graduationDesktop from "../assets/graduationDesktop.webp";
 
 
 
@@ -70,7 +74,7 @@ export const templates: Template[] = [
     id: "1",
     nameKey: "templates.1.name",
     descriptionKey: "templates.1.description",
-    price: 25,
+    price: 15,
     image: autumnTemplate,
     imageDesktop: autumnDesktop,
     link: "https://autumn-invitation.netlify.app/",
@@ -82,7 +86,7 @@ export const templates: Template[] = [
     id: "2",
     nameKey: "templates.2.name",
     descriptionKey: "templates.2.description",
-    price: 20,
+    price: 15,
     image: pink,
     imageDesktop: pinkDesktop,
     link: "https://pink-invitation.netlify.app/",
@@ -94,7 +98,7 @@ export const templates: Template[] = [
     id: "3",
     nameKey: "templates.3.name",
     descriptionKey: "templates.3.description",
-    price: 20,
+    price: 15,
     image: green,
     imageDesktop: greenDesktop,
     link: "https://green-invitation.netlify.app/",
@@ -106,7 +110,7 @@ export const templates: Template[] = [
     id: "4",
     nameKey: "templates.4.name",
     descriptionKey: "templates.4.description",
-    price: 20,
+    price: 15,
     image: reveal,
     imageDesktop: revealDesktop,
     link: "https://reveal-party-invitation.netlify.app/",
@@ -180,7 +184,7 @@ export const templates: Template[] = [
     id: "10",
     nameKey: "templates.10.name",
     descriptionKey: "templates.10.description",
-    price: 30,
+    price: 20,
     image: goldenUzatu,
     imageDesktop: goldenUzatuDesktop,
     link: "https://uzatu-invitaion.netlify.app/",
@@ -221,6 +225,30 @@ export const templates: Template[] = [
     image: darkRed,
     imageDesktop: darkRedDesktop,
     link: "https://dark-red-invitation.netlify.app/",
+    featuresKeys: [
+      ...standardFeatures
+    ],
+  }, 
+  {
+    id: "14",
+    nameKey: "templates.14.name",
+    descriptionKey: "templates.14.description",
+    price: 25,
+    image: darkBlue,
+    imageDesktop: darkBlueDesktop,
+    link: "https://dark-blue-invitation.netlify.app/",
+    featuresKeys: [
+      ...standardFeatures
+    ],
+  },
+  {
+    id: "15",
+    nameKey: "templates.15.name",
+    descriptionKey: "templates.15.description",
+    price: 15,
+    image: graduation,
+    imageDesktop: graduationDesktop,
+    link: "https://graduation-party.netlify.app/",
     featuresKeys: [
       ...standardFeatures
     ],

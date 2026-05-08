@@ -61,6 +61,14 @@
     "step3": "Share",
     "step3desc": "Share with your guests"
   },
+  "stats": {
+    "label": "Our Impact",
+    "title": "Trusted by Thousands",
+    "clients": "Happy Clients",
+    "events": "Events Celebrated",
+    "countries": "Countries Reached",
+    "satisfaction": "Satisfaction Rate"
+  },
   "testimonials": {
     "label": "Love Stories",
     "title": "What Our Users Say",
@@ -204,6 +212,14 @@
     "13": {
       "name": "Dark Red Romance",
       "description": "A bold and passionate wedding invitation template with deep red hues and dramatic design."
+    },
+    "14": {
+      "name": "Midnight Blue",
+      "description": "An elegant and sophisticated wedding invitation template with deep blue tones and modern design."
+    },
+    "15": {
+      "name": "Academic Celebration",
+      "description": "A prestigious and celebratory graduation invitation template with classic elements and modern flair."
     }
   }
 }

@@ -61,6 +61,14 @@
     "step3": "Ulashish",
     "step3desc": "Mehmonlaringizga ulashing"
   },
+  "stats": {
+    "label": "Bizning Ta'siri",
+    "title": "Minglab kishi ishonadi",
+    "clients": "Xursand Mijozlar",
+    "events": "Tadbir Nishonladi",
+    "countries": "Mamlakatlar Yetkazildi",
+    "satisfaction": "Qoniqish Darajasi"
+  },
   "testimonials": {
     "label": "Muhabbat Hikoyalari",
     "title": "Foydalanuvchilar Nima Deyishadi",
@@ -161,7 +169,14 @@
     },
     "13": {
       "name": "To‘q Qizil Romantika",
-      "description": "Chuqur qizil ranglar va dramatik dizaynga ega ehtirosli to‘y taklifnomasi."
+      "description": "Chuqur qizil ranglar va dramatik dizaynga ega ehtirosli to‘y taklifnomasi."    },
+    "14": {
+      "name": "Yarim Tungi Ko'k",
+      "description": "Chuqur ko'k ranglar va zamonaviy dizaynga ega nafis va havfsiz to'y taklifnomasi."
+    },
+    "15": {
+      "name": "Akademik Nayirish",
+      "description": "Klassik elementlar va zamonaviy uslub bilan buyuk va bayramlik o'qish bitiruvchi taklifnomasi."
     }
   },
 

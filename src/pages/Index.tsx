@@ -4,6 +4,7 @@ import HeroSection from "@/components/HeroSection";
 import FeaturedTemplates from "@/components/FeaturedTemplates";
 import BenefitsSection from "@/components/BenefitsSection";
 import HowItWorks from "@/components/HowItWorks";
+import Statistics from "@/components/Statistics";
 import Testimonials from "@/components/Testimonials";
 import Footer from "@/components/Footer";
 import { usePageTitle } from "@/hooks/use-page-title";
@@ -24,6 +25,7 @@ const Index = () => {
         <FeaturedTemplates />
         <BenefitsSection />
         <HowItWorks />
+        <Statistics />
         {/* Custom Request Section */}
         <section className="py-16 lg:py-24 bg-accent/10">
           <div className="container mx-auto px-6 lg:px-12 text-center">
