@@ -28,6 +28,8 @@ import darkBlue from "../assets/darkBlue.webp";
 import darkBlueDesktop from "../assets/darkBlueDesktop.webp";
 import graduation from "../assets/graduation.webp";
 import graduationDesktop from "../assets/graduationDesktop.webp";
+import flight from "../assets/flight.webp";
+import flightDesktop from "../assets/flightDesktop.webp";
 
 
 
@@ -251,6 +253,19 @@ export const templates: Template[] = [
     link: "https://graduation-party.netlify.app/",
     featuresKeys: [
       ...standardFeatures
+    ],
+  }, 
+  {
+    id: "16",
+    nameKey: "templates.16.name",
+    descriptionKey: "templates.16.description",
+    price: 35,
+    image: flight,
+    imageDesktop: flightDesktop,
+    link: "https://flight-to-wedding.netlify.app/",
+    featuresKeys: [
+      ...standardFeatures,
+      "template.feature.music"
     ],
   }
 ];
