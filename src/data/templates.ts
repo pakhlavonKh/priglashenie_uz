@@ -30,6 +30,10 @@ import graduation from "../assets/graduation.webp";
 import graduationDesktop from "../assets/graduationDesktop.webp";
 import flight from "../assets/flight.webp";
 import flightDesktop from "../assets/flightDesktop.webp";
+import goldenHour from "../assets/goldenHour.webp";
+import goldenHourDesktop from "../assets/goldenHourDesktop.webp";
+import summerVows from "../assets/summerVows.webp";
+import summerVowsDesktop from "../assets/summerVowsDesktop.webp";
 
 
 
@@ -267,6 +271,32 @@ export const templates: Template[] = [
       ...standardFeatures,
       "template.feature.music"
     ],
-  }
+  },
+  {
+    id: "17",
+    nameKey: "templates.17.name",
+    descriptionKey: "templates.17.description",
+    price: 20,
+    image: goldenHour,
+    imageDesktop: goldenHourDesktop,
+    link: "https://golden-hour-invitation.netlify.app/",
+    featuresKeys: [
+      ...standardFeatures,
+      "template.feature.music"
+    ],
+  },
+  {
+    id: "18",
+    nameKey: "templates.18.name",
+    descriptionKey: "templates.18.description",
+    price: 20,
+    image: summerVows,
+    imageDesktop: summerVowsDesktop,
+    link: "https://summer-vows-invitation.netlify.app/",
+    featuresKeys: [
+      ...standardFeatures,
+      "template.feature.music"
+    ],
+  },
 ];
 
