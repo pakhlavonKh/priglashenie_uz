@@ -191,6 +191,15 @@
       "name": "Yozgi Qasamyodlar",
       "description": "Yengil, plyajdan ilhomlangan to‘y taklifnomasi — yumshoq ranglar va erkin yoz kayfiyati bilan."
     }
+    ,
+    "19": {
+      "name": "Abadiy Quloqcha",
+      "description": "Noyob detallar va yumshoq tuslarga ega abadiy romantik taklifnoma."
+    },
+    "20": {
+      "name": "Abadiy Sevgi",
+      "description": "Elegant tipografiya va nafis joylashuvi bilan klassik romantik taklifnoma."
+    }
   },
 
   "template": {

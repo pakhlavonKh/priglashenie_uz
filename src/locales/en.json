@@ -234,5 +234,14 @@
       "name": "Summer Vows",
       "description": "A breezy, seaside-inspired wedding invitation with soft colors and relaxed summer vibes."
     }
+    ,
+    "19": {
+      "name": "Everlasting Embrace",
+      "description": "A timeless romantic invitation with delicate details and soft tones."
+    },
+    "20": {
+      "name": "Ever Love",
+      "description": "A classic romantic invitation featuring elegant typography and refined layout."
+    }
   }
 }
