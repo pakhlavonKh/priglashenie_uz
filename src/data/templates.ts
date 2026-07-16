@@ -34,6 +34,10 @@ import goldenHour from "../assets/goldenHour.webp";
 import goldenHourDesktop from "../assets/goldenHourDesktop.webp";
 import summerVows from "../assets/summerVows.webp";
 import summerVowsDesktop from "../assets/summerVowsDesktop.webp";
+import everLasting from "../assets/everLasting.webp";
+import everLastingDesktop from "../assets/everLastingDesktop.webp";
+import everLove from "../assets/everLove.webp";
+import everLoveDesktop from "../assets/everLoveDesktop.webp";
 
 
 
@@ -298,5 +302,29 @@ export const templates: Template[] = [
       "template.feature.music"
     ],
   },
+  {
+    id: "19",
+    nameKey: "templates.19.name",
+    descriptionKey: "templates.19.description",
+    price: 20,
+    image: everLasting,
+    imageDesktop: everLastingDesktop, 
+    link: "https://ever-lasting-invitation.netlify.app/",
+    featuresKeys: [
+      ...standardFeatures
+    ],
+  },
+  {
+    id: "20",
+    nameKey: "templates.20.name",
+    descriptionKey: "templates.20.description",
+    price: 20,
+    image: everLove,
+    imageDesktop: everLoveDesktop, 
+    link: "https://ever-love-invitation.netlify.app/",
+    featuresKeys: [
+      ...standardFeatures
+    ],
+  }
 ];
 
