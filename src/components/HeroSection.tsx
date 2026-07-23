@@ -22,6 +22,9 @@ const HeroSection = () => {
             <p className="text-sm sm:text-base lg:text-lg font-light text-muted-foreground leading-relaxed max-w-lg">
               {t("hero.subtitle")}
             </p>
+            <p className="text-sm text-muted-foreground max-w-xl">
+              Create elegant digital invitations for weddings, birthdays, baby showers, graduations, and other special celebrations in minutes.
+            </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <Link
                 to="/templates"

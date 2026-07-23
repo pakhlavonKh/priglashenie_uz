@@ -37,7 +37,9 @@ i18n
   .init({
     resources,
     lng: getInitialLanguage(),
-    fallbackLng: 'en',
+    fallbackLng: ['ru', 'en'],
+    supportedLngs: ['en', 'uz', 'ru', 'kz'],
+    defaultNS: 'translation',
     interpolation: {
       escapeValue: false
     }
