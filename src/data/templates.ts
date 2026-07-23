@@ -81,98 +81,13 @@ export const OPTIONAL_FEATURES = [
 // Example usage in UI: t(template.nameKey), t(template.descriptionKey), template.featuresKeys.map(f => t(f))
 export const templates: Template[] = [
   {
-    id: "1",
-    nameKey: "templates.1.name",
-    descriptionKey: "templates.1.description",
-    price: 15,
-    image: autumnTemplate,
-    imageDesktop: autumnDesktop,
-    link: "https://autumn-invitation.netlify.app/",
-    featuresKeys: [
-      ...standardFeatures
-    ],
-  },
-  {
-    id: "2",
-    nameKey: "templates.2.name",
-    descriptionKey: "templates.2.description",
-    price: 15,
-    image: pink,
-    imageDesktop: pinkDesktop,
-    link: "https://pink-invitation.netlify.app/",
-    featuresKeys: [
-      ...standardFeatures
-    ],
-  }, 
-  {
-    id: "3",
-    nameKey: "templates.3.name",
-    descriptionKey: "templates.3.description",
-    price: 15,
-    image: green,
-    imageDesktop: greenDesktop,
-    link: "https://green-invitation.netlify.app/",
-    featuresKeys: [
-      ...standardFeatures
-    ],
-  },
-  {
-    id: "4",
-    nameKey: "templates.4.name",
-    descriptionKey: "templates.4.description",
-    price: 15,
-    image: reveal,
-    imageDesktop: revealDesktop,
-    link: "https://reveal-party-invitation.netlify.app/",
-    featuresKeys: [
-      ...standardFeatures
-    ],
-  }, 
-  {
-    id: "5",
-    nameKey: "templates.5.name",
-    descriptionKey: "templates.5.description",
+    id: "19",
+    nameKey: "templates.19.name",
+    descriptionKey: "templates.19.description",
     price: 20,
-    image: blue,
-    imageDesktop: blueDesktop, 
-    link: "https://blue-invitation.netlify.app/",
-    featuresKeys: [
-      ...standardFeatures
-    ],
-  },
-  {
-    id: "6",
-    nameKey: "templates.6.name",
-    descriptionKey: "templates.6.description",
-    price: 20,
-    image: pinkbirthday,
-    imageDesktop: pinkbirthdayDesktop, 
-    link: "https://pink-birthday-invitation.netlify.app/",
-    featuresKeys: [
-      ...standardFeatures
-    ],
-  },
-  {
-    id: "7",
-    nameKey: "templates.7.name",
-    descriptionKey: "templates.7.description",
-    price: 25,
-    image: emeraldUzatu,
-    imageDesktop: emeraldUzatuDesktop, 
-    link: "https://sabina-uzatu.76khwmidov.workers.dev/",
-    featuresKeys: [
-      ...standardFeatures,
-      "template.feature.music"
-    ],
-  }, 
-  {
-    id: "8",
-    nameKey: "templates.8.name",
-    descriptionKey: "templates.8.description",
-    price: 15,
-    image: goldenbirthday,
-    imageDesktop: goldenbirthdayDesktop, 
-    link: "https://birthday-invitation.76khwmidov.workers.dev/",
+    image: everLasting,
+    imageDesktop: everLastingDesktop, 
+    link: "https://ever-lasting-invitation.netlify.app/",
     featuresKeys: [
       ...standardFeatures
     ],
@@ -191,26 +106,38 @@ export const templates: Template[] = [
     ],
   }, 
   {
-    id: "10",
-    nameKey: "templates.10.name",
-    descriptionKey: "templates.10.description",
+    id: "3",
+    nameKey: "templates.3.name",
+    descriptionKey: "templates.3.description",
     price: 15,
-    image: goldenUzatu,
-    imageDesktop: goldenUzatuDesktop,
-    link: "https://uzatu-invitaion.netlify.app/",
+    image: green,
+    imageDesktop: greenDesktop,
+    link: "https://green-invitation.netlify.app/",
+    featuresKeys: [
+      ...standardFeatures
+    ],
+  },
+  {
+    id: "7",
+    nameKey: "templates.7.name",
+    descriptionKey: "templates.7.description",
+    price: 25,
+    image: emeraldUzatu,
+    imageDesktop: emeraldUzatuDesktop, 
+    link: "https://sabina-uzatu.76khwmidov.workers.dev/",
     featuresKeys: [
       ...standardFeatures,
       "template.feature.music"
     ],
-  },
+  }, 
   {
-    id: "11",
-    nameKey: "templates.11.name",
-    descriptionKey: "templates.11.description",
+    id: "5",
+    nameKey: "templates.5.name",
+    descriptionKey: "templates.5.description",
     price: 20,
-    image: goldenBirthdayParty,
-    imageDesktop: goldenBirthdayPartyDesktop,
-    link: "https://golden-birthday-invitation.netlify.app/",
+    image: blue,
+    imageDesktop: blueDesktop, 
+    link: "https://blue-invitation.netlify.app/",
     featuresKeys: [
       ...standardFeatures
     ],
@@ -240,6 +167,19 @@ export const templates: Template[] = [
     ],
   }, 
   {
+    id: "16",
+    nameKey: "templates.16.name",
+    descriptionKey: "templates.16.description",
+    price: 35,
+    image: flight,
+    imageDesktop: flightDesktop,
+    link: "https://flight-to-wedding.netlify.app/",
+    featuresKeys: [
+      ...standardFeatures,
+      "template.feature.music"
+    ],
+  },
+  {
     id: "14",
     nameKey: "templates.14.name",
     descriptionKey: "templates.14.description",
@@ -247,6 +187,79 @@ export const templates: Template[] = [
     image: darkBlue,
     imageDesktop: darkBlueDesktop,
     link: "https://dark-blue-invitation.netlify.app/",
+    featuresKeys: [
+      ...standardFeatures
+    ],
+  },
+  {
+    id: "4",
+    nameKey: "templates.4.name",
+    descriptionKey: "templates.4.description",
+    price: 15,
+    image: reveal,
+    imageDesktop: revealDesktop,
+    link: "https://reveal-party-invitation.netlify.app/",
+    featuresKeys: [
+      ...standardFeatures
+    ],
+  }, 
+  {
+    id: "8",
+    nameKey: "templates.8.name",
+    descriptionKey: "templates.8.description",
+    price: 15,
+    image: goldenbirthday,
+    imageDesktop: goldenbirthdayDesktop, 
+    link: "https://birthday-invitation.76khwmidov.workers.dev/",
+    featuresKeys: [
+      ...standardFeatures
+    ],
+  },
+  {
+    id: "2",
+    nameKey: "templates.2.name",
+    descriptionKey: "templates.2.description",
+    price: 15,
+    image: pink,
+    imageDesktop: pinkDesktop,
+    link: "https://pink-invitation.netlify.app/",
+    featuresKeys: [
+      ...standardFeatures
+    ],
+  }, 
+  {
+    id: "10",
+    nameKey: "templates.10.name",
+    descriptionKey: "templates.10.description",
+    price: 15,
+    image: goldenUzatu,
+    imageDesktop: goldenUzatuDesktop,
+    link: "https://uzatu-invitaion.netlify.app/",
+    featuresKeys: [
+      ...standardFeatures,
+      "template.feature.music"
+    ],
+  },
+  {
+    id: "11",
+    nameKey: "templates.11.name",
+    descriptionKey: "templates.11.description",
+    price: 20,
+    image: goldenBirthdayParty,
+    imageDesktop: goldenBirthdayPartyDesktop,
+    link: "https://golden-birthday-invitation.netlify.app/",
+    featuresKeys: [
+      ...standardFeatures
+    ],
+  },
+  {
+    id: "6",
+    nameKey: "templates.6.name",
+    descriptionKey: "templates.6.description",
+    price: 20,
+    image: pinkbirthday,
+    imageDesktop: pinkbirthdayDesktop, 
+    link: "https://pink-birthday-invitation.netlify.app/",
     featuresKeys: [
       ...standardFeatures
     ],
@@ -263,19 +276,6 @@ export const templates: Template[] = [
       ...standardFeatures
     ],
   }, 
-  {
-    id: "16",
-    nameKey: "templates.16.name",
-    descriptionKey: "templates.16.description",
-    price: 35,
-    image: flight,
-    imageDesktop: flightDesktop,
-    link: "https://flight-to-wedding.netlify.app/",
-    featuresKeys: [
-      ...standardFeatures,
-      "template.feature.music"
-    ],
-  },
   {
     id: "17",
     nameKey: "templates.17.name",
@@ -303,13 +303,13 @@ export const templates: Template[] = [
     ],
   },
   {
-    id: "19",
-    nameKey: "templates.19.name",
-    descriptionKey: "templates.19.description",
-    price: 20,
-    image: everLasting,
-    imageDesktop: everLastingDesktop, 
-    link: "https://ever-lasting-invitation.netlify.app/",
+    id: "1",
+    nameKey: "templates.1.name",
+    descriptionKey: "templates.1.description",
+    price: 15,
+    image: autumnTemplate,
+    imageDesktop: autumnDesktop,
+    link: "https://autumn-invitation.netlify.app/",
     featuresKeys: [
       ...standardFeatures
     ],
