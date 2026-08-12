@@ -38,6 +38,8 @@ import everLasting from "../assets/everLasting.webp";
 import everLastingDesktop from "../assets/everLastingDesktop.webp";
 import everLove from "../assets/everLove.webp";
 import everLoveDesktop from "../assets/everLoveDesktop.webp";
+import bloomDesktop from "../assets/bloomDesktop.webp";
+import bloom from "../assets/bloom.webp";
 
 
 
@@ -322,6 +324,18 @@ export const templates: Template[] = [
     image: everLove,
     imageDesktop: everLoveDesktop, 
     link: "https://ever-love-invitation.netlify.app/",
+    featuresKeys: [
+      ...standardFeatures
+    ],
+  }, 
+  {
+    id: "21",
+    nameKey: "templates.21.name",
+    descriptionKey: "templates.21.description",
+    price: 15,
+    image: bloom,
+    imageDesktop: bloomDesktop, 
+    link: "https://bloom-birthday.netlify.app/",
     featuresKeys: [
       ...standardFeatures
     ],
