@@ -119,23 +119,6 @@ export const usePageTitle = (metadata?: PageMetadata) => {
     const existingAlternates = Array.from(document.head.querySelectorAll('link[rel="alternate"]'));
     existingAlternates.forEach((link) => link.remove());
 
-    const languageBaseUrl = 'https://invito.live';
-    const alternateLanguages = [
-      { lang: 'ru', href: `${languageBaseUrl}/ru` },
-      { lang: 'en', href: `${languageBaseUrl}/en` },
-      { lang: 'uz', href: `${languageBaseUrl}/uz` },
-      { lang: 'kk', href: `${languageBaseUrl}/kk` },
-      { lang: 'x-default', href: `${languageBaseUrl}/ru` }
-    ];
-
-    alternateLanguages.forEach(({ lang, href }) => {
-      const alternateLink = document.createElement('link');
-      alternateLink.setAttribute('rel', 'alternate');
-      alternateLink.setAttribute('hreflang', lang);
-      alternateLink.setAttribute('href', href);
-      document.head.appendChild(alternateLink);
-    });
-
     const currentPath = canonicalPath === '/' ? '' : canonicalPath;
     const currentBaseUrl = `https://invito.live${currentPath}`;
     const ogUrlMeta = document.querySelector('meta[property="og:url"]');

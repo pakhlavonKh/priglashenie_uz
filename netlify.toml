@@ -1,7 +1,36 @@
+[[redirects]]
+  from = "/ru"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/uz"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/kk"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/kz"
+  to = "/"
+  status = 301
+  force = true
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
   force = true
-  conditions = { Not = ["/assets/*", "/favicon.png"] }
+  conditions = { Not = ["/assets/*", "/favicon.png", "/robots.txt", "/sitemap.xml", "/og-image.webp"] }
